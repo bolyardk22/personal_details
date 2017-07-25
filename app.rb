@@ -25,4 +25,3 @@ get '/three_numbers' do
 	name = params[:name]
 	erb :three_numbers, :locals=> {:name=>name, :age=>age}
 end
-
