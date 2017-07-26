@@ -1,1 +1,10 @@
-Wow, <%=name%>, you are <%=age%> years old!
+Wow, <%=user_name%>, you are <%=age%> years old! Please enter three numbers greater than zero.
+
+<form method = "post" action = "/three_numbers">
+	<input type = "number" min = "0" max = "999999999" name = "num1">
+	<input type = "number" min = "0" max = "999999999" name = "num2">
+	<input type = "number" min = "0" max = "999999999" name = "num3">
+	<input type = "hidden" name = "name" value = <%=user_name%>>
+	<input type = "hidden" name = "age" value = <%=age%>>
+	<input type = "submit">
+</form>
