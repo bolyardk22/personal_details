@@ -1,1 +1,14 @@
-You, <%=user_name%>, aged <%=age%> years, have chosen the numbers <%=num1%>, <%=num2%>, and <%=num3%>. The sum of these numbers is  .
+Hello, <%=user_name%>, age <%=age%>! You have <%=hair_color%> hair and <%=eye_color%> eyes. Your favorite food is <%=fave_food%> and your favorite drink is <%=fave_drink%>. Your three favorite numbers are <%=num1%>, <%=num2%>, and <%=num3%>, and the sum of those numbers is <%=totalnumber%>.
+
+<form method = "post" action = "/total">
+	<input type = "hidden" name = "user_name" value = <%=user_name%>>
+	<input type = "hidden" name = "age" value = <%=age%>>
+	<input type = "hidden" name = "hair_color" value = <%=hair_color%>>
+	<input type = "hidden" name = "eye_color" value = <%=eye_color%>>
+	<input type = "hidden" name = "fave_food" value = <%=fave_food%>>
+	<input type = "hidden" name = "fave_drink" value = <%=fave_drink%>>
+	<input type = "hidden" name = "num1" value = <%=num1%>>
+	<input type = "hidden" name = "num2" value = <%=num2%>>
+	<input type = "hidden" name = "num3" value = <%=num3%>>
+	<input type = "hidden" name = "totalnumber" value = <%=totalnumber%>>
+</form>

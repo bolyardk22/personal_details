@@ -1,10 +1,14 @@
-Wow, <%=user_name%>, you are <%=age%> years old! Please enter three numbers greater than zero.
+Hello, <%=user_name%>, age <%=age%>! You have <%=hair_color%> hair and <%=eye_color%> eyes. Your favorite food is <%=fave_food%> and your favorite drink is <%=fave_drink%>. Please enter your three favorite numbers greater than zero.
 
 <form method = "post" action = "/three_numbers">
-	<input type = "number" min = "0" max = "999999999" name = "num1">
-	<input type = "number" min = "0" max = "999999999" name = "num2">
-	<input type = "number" min = "0" max = "999999999" name = "num3">
-	<input type = "hidden" name = "name" value = <%=user_name%>>
+	<input type = "number" name = "num1">
+	<input type = "number" name = "num2">
+	<input type = "number" name = "num3">
+	<input type = "hidden" name = "user_name" value = <%=user_name%>>
 	<input type = "hidden" name = "age" value = <%=age%>>
+	<input type = "hidden" name = "hair_color" value = <%=hair_color%>>
+	<input type = "hidden" name = "eye_color" value = <%=eye_color%>>
+	<input type = "hidden" name = "fave_food" value = <%=fave_food%>>
+	<input type = "hidden" name = "fave_drink" value = <%=fave_drink%>>
 	<input type = "submit">
 </form>
